@@ -1,2 +1,2 @@
 # SwimPlayer
-Swimming plugin for players. Altay &amp; PMMP
+Swimming plugin for players. Only Altay
