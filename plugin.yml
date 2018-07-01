@@ -10,6 +10,6 @@ main: Eren5960\SwimPlayer\Swim
 author: Eren5960
 
 permissions:
-  swim:
-    default: op
+  use.swim:
+    default: true
     description: SwimSwamSwum!
