@@ -13,8 +13,8 @@ class Swim extends PluginBase implements Listener{
 	}
 	public function yuzz(PlayerMoveEvent $e){
 		$o = $e->getPlayer();
-		if($e->getFrom()->getSide(0)->getId() == 9 || $e->getFrom()->getSide(0)->getId() == 8){
-			if($o->hasPermission("swim")){
+		if($o->getLevel()->getBlock($o->getSide(0))->getId() == 9 || $o->getLevel()->getBlock($o->getSide(0))->getId() == 8){
+			if($o->hasPermission("use.swim")){
 			$o->setSwimming(true);
 			}
 		}
