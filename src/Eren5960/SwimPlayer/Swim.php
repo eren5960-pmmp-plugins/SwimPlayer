@@ -1,15 +1,7 @@
 <?php
 /**
-* _____ ____ ___ __ ___ 
-* | ____| _ __ ___ _ __ | ___| / _ \ / /_ / _ \ 
-* | _| | '__|/ _ \| '_ \ |___ \| (_) || '_ \ | | | |
-* | |___ | | | __/| | | | ___) |\__, || (_) || |_| |
-* |_____||_| \___||_| |_||____/ /_/ \___/ \___/ 
-* 
-* @version v1
-* @name JobForm
 * @author Eren5960
-* @link https://github.com/Eren5960/JobForm
+* @link https://github.com/Eren5960
 */
 namespace Eren5960\SwimPlayer;
 
@@ -23,12 +15,15 @@ class Swim extends PluginBase implements Listener{
 	public function onEnable(): void{
 		$this->getServer()->getPluginManager()->registerEvents($this, $this);
 	}
-	public function onMove(PlayerMoveEvent $e){
-		$player = $e->getPlayer();
-      if(!$player->hasPermission("use.swim")) return;
 
+    /**
+     * @param PlayerMoveEvent $e
+     */
+    public function onMove(PlayerMoveEvent $event){
+		$player = $event->getPlayer();
+        if(!$player->hasPermission("use.swim")) return;
 		if($player->isUnderWater()){
-			    $player->setSwimming(true);
+		    $player->setSwimming(true);
 		}
 	}
 } 
