@@ -7,7 +7,7 @@ namespace Eren5960\SwimPlayer;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\{
-    Listener, \player\PlayerMoveEvent
+    Listener, player\PlayerMoveEvent
 };
 
 class Swim extends PluginBase implements Listener{
