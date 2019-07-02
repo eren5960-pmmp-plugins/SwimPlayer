@@ -1,3 +1,3 @@
 # SwimPlayer
-# NO PLACE IN THIS PLUG
+### NO USE THIS PLUGİN (_DEPRECATED_ )
 _Swimming plugin for players. Only Altay_
